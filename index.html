@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Page Title</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+		<!-- main style -->
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<!-- helper style -->
+		<link rel="stylesheet" href="assets/css/global_helper.css" type="text/css" />
+	</head>
+	<body>
+		<nav>
+			<div class="chat-active">
+				<img src="assets/img/girl.svg" class="thumb-img" /> 
+				<span><strong> &nbsp; Jane Doe</strong></span>
+			</div>
+			<div class="search-chat">
+				<i class="fa fa-search"></i>
+				<input type="text" placeholder="Find Chat.." />
+			</div>
+		</nav>
+		<aside>
+			<div class="side-top">
+				<div class="row">
+					<div class="col-md-3 align-center">
+						<img class="profile-img" src="assets/img/girl.svg"></img>
+					</div>
+					<div class="col-md-7 padding-top-30">
+						<span> Pian Maulana</span>
+					</div>
+					<div class="col-md-2 margin-top-20 padding-0">
+						<div class="dropdown show">
+						  <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <!-- <i class="fa fa-arrow-down"></i> -->
+						  </a>
+
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						    <a class="dropdown-item" href="#">Action</a>
+						    <a class="dropdown-item" href="#">Another action</a>
+						    <a class="dropdown-item" href="#">Something else here</a>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="search-box">
+					<i class="fa fa-search"></i>
+					<input type="text" placeholder="Search Contact.." />
+				</div>
+			</div>	
+			<div class="tabcontent">
+				<div class="row effect swipe" onclick="activeChat(this)">
+					<div class="col-md-3">
+						<img src="assets/img/girl.svg" class="thumb-img" />
+					</div>
+					<div class="col-md-9 padding-0 c-button c-button--gooey">
+						<div class="row padding-0">
+							<div class="col-md-9 padding-0">
+								<span>Sarah Johnson</span>
+								<br/>
+								<span class="chat-text">Lorem Ipsum dolor sit amet</span>
+							</div>
+							<div class="col-md-3 padding-0">
+								<span class="chat-time">13:43 PM</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row effect swipe" onclick="activeChat(this)">
+					<div class="col-md-3">
+						<img src="assets/img/man.svg" class="thumb-img" />
+					</div>
+					<div class="col-md-9 padding-0 c-button c-button--gooey">
+						<div class="row padding-0">
+							<div class="col-md-9 padding-0">
+								<span>Dave</span>
+								<br/>
+								<span class="chat-text">consectetur adipiscing elit</span>
+							</div>
+							<div class="col-md-3 padding-0">
+								<span class="chat-time">11:43 AM</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row effect swipe" onclick="activeChat(this)">
+					<div class="col-md-3">
+						<img src="assets/img/testi.svg" class="thumb-img" />
+					</div>
+					<div class="col-md-9 padding-0 c-button c-button--gooey">
+						<div class="row padding-0">
+							<div class="col-md-9 padding-0">
+								<span>Mikael Galkin</span>
+								<br/>
+								<span class="chat-text">ed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+							</div>
+							<div class="col-md-3 padding-0">
+								<span class="chat-time">15:43 PM</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row effect swipe" onclick="activeChat(this)">
+					<div class="col-md-3">
+						<img src="assets/img/testi2.svg" class="thumb-img" />
+					</div>
+					<div class="col-md-9 padding-0 c-button c-button--gooey">
+						<div class="row padding-0">
+							<div class="col-md-9 padding-0">
+								<span>Edhelin</span>
+								<br/>
+								<span class="chat-text">quis nostrud exercitation ullamco laboris </span>
+							</div>
+							<div class="col-md-3 padding-0">
+								<span class="chat-time">13:43 PM</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row effect swipe" onclick="activeChat(this)">
+					<div class="col-md-3">
+						<img src="assets/img/girl.svg" class="thumb-img" />
+					</div>
+					<div class="col-md-9 padding-0 c-button c-button--gooey">
+						<div class="row padding-0">
+							<div class="col-md-9 padding-0">
+								<span>Fitriani Kim Arikagi</span>
+								<br/>
+								<span class="chat-text">heii narutoo</span>
+							</div>
+							<div class="col-md-3 padding-0">
+								<span class="chat-time">13:43 PM</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row effect swipe" onclick="activeChat(this)">
+					<div class="col-md-3">
+						<img src="assets/img/man.svg" class="thumb-img" />
+					</div>
+					<div class="col-md-9 padding-0 c-button c-button--gooey">
+						<div class="row padding-0">
+							<div class="col-md-9 padding-0">
+								<span>Amanda Stephani</span>
+								<br/>
+								<span class="chat-text">Excepteur sint occaecat cupidatat non proident, </span>
+							</div>
+							<div class="col-md-3 padding-0">
+								<span class="chat-time">13:43 PM</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row effect swipe" onclick="activeChat(this)">
+					<div class="col-md-3">
+						<img src="assets/img/girl.svg" class="thumb-img" />
+					</div>
+					<div class="col-md-9 padding-0 c-button c-button--gooey">
+						<div class="row padding-0">
+							<div class="col-md-9 padding-0">
+								<span>Savira</span>
+								<br/>
+								<span class="chat-text">voluptate velit esse cillum dolore</span>
+							</div>
+							<div class="col-md-3 padding-0">
+								<span class="chat-time">13:43 PM</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row effect swipe" onclick="activeChat(this)">
+					<div class="col-md-3">
+						<img src="assets/img/testi2.svg" class="thumb-img" />
+					</div>
+					<div class="col-md-9 padding-0 c-button c-button--gooey">
+						<div class="row padding-0">
+							<div class="col-md-9 padding-0">
+								<span>Fera</span>
+								<br/>
+								<span class="chat-text">laboris nisi ut aliquip ex ea commodo</span>
+							</div>
+							<div class="col-md-3 padding-0">
+								<span class="chat-time">13:43 PM</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<div class="sidebar-right">
+			<div class="row">
+				<div class="activity">
+					<button class="effect swipe" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-plus"></i> | Add Activity</button>
+				</div>
+				<div class="todo">
+					<h5>TODO List</h5>
+					<ul>
+						<li><i class="fa fa-book"></i> learn programming</li>
+						<li><i class="fa fa-music"></i> playing the guitar</li>
+						<li><i class="fa fa-bed"></i> Sleep</li>
+					</ul>
+				</div>
+				<div class="online-user">
+					<h5>Online Users</h5>
+					<ul>
+						<li><img src="assets/img/testi2.svg" class="small-img" /> Susan Polgar</li>
+						<li><img src="assets/img/girl.svg" class="small-img" /> Savira</li>
+						<li><img src="assets/img/testi.svg" class="small-img" /> John Doe</li>
+						<li><img src="assets/img/man.svg" class="small-img" /> Dave</li>
+						<li><img src="assets/img/testi2.svg" class="small-img" /> Mikael Galkin</li>
+						<li><img src="assets/img/girl.svg" class="small-img" /> Fitriani Kim Arikagi</li>
+						<li><img src="assets/img/testi.svg" class="small-img" /> Juan</li>
+						<li><img src="assets/img/man.svg" class="small-img" /> Mikhail Tal</li>
+						<li><img src="assets/img/testi2.svg" class="small-img" /> Gery Kasparov</li>
+						<li><img src="assets/img/girl.svg" class="small-img" /> Medina</li>
+						<li><img src="assets/img/testi.svg" class="small-img" /> Paul Morphy</li>
+						<li><img src="assets/img/man.svg" class="small-img" /> Donal byrne</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="wraper">
+			<div class="content">
+				<div class="row">
+					<div class="left-chat">
+						<span class="chat-text">
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+						</span>
+						<br/>
+						<span class="chat-time" style="float: right;">
+							14:20 PM
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="left-chat">
+						<span class="chat-text">
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+						</span>
+						<br/>
+						<span class="chat-time" style="float: right;">
+							14:20 PM
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="left-chat">
+						<span class="chat-text">
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+						</span>
+						<br/>
+						<span class="chat-time" style="float: right;">
+							14:20 PM
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="left-chat">
+						<span class="chat-text">
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+						</span>
+						<br/>
+						<span class="chat-time" style="float: right;">
+							14:20 PM
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="right-chat">
+						<span class="chat-text">
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+						</span>
+						<br/>
+						<span class="chat-time" style="float: right;">
+							14:20 PM
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="right-chat">
+						<span class="chat-text">
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+						</span>
+						<br/>
+						<span class="chat-time" style="float: right;">
+							14:20 PM
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="right-chat">
+						<span class="chat-text">
+							lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+						</span>
+						<br/>
+						<span class="chat-time" style="float: right;">
+							14:20 PM
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="footer-chat">
+				<i class="fa fa-smile-o" aria-hidden="true"></i>
+				<i class="fa fa-camera" aria-hidden="true"></i>
+				<input type="text" name="chat_message" placeholder="type your text..." cols="40" rows="5"/>
+				<i class="fa fa-paper-plane-o" aria-hidden="true" onclick="appendText()"></i>
+			</div>
+		</div>
+		<!-- modal bootstrap !-->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Add Activity</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="col-form-label">Title:</label>
+			            <input type="text" class="form-control" name="title" autocomplete="off">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="col-form-label">Short Description:</label>
+			            <textarea class="form-control" name="message-text" autocomplete="off"></textarea>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" id="close-modal" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary" onclick="addActivity()">Send</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></body>
+		<!-- custome javascript -->
+		<script>
+			//select chat active
+			function activeChat(e) {
+				var rows = document.querySelectorAll('.row');
+				var i;
+				for(i = 0; i < rows.length; i++) {
+					rows[i].classList.remove('active-chat');
+				}
+				e.classList.add('active-chat');
+			}
+			//simulation append chat text
+			function appendText() {
+				var text = document.querySelector("input[name='chat_message']").value;
+				var element = '<div class="row">'+
+									'<div class="right-chat">'+
+										'<span class="chat-text">'+
+											text +
+										'</span>'+
+										'<br/>'+
+										'<span class="chat-time" style="float: right;">'+
+											'14:20 PM'+
+										'</span>'+
+									'</div>'+
+								'</div>';
+				var content = document.querySelector('.content');
+					content.innerHTML += element;
+					content.scrollTop +=200;
+					document.querySelector("input[name='chat_message']").value = '';
+
+			}
+			/*add to do list*/
+			function addActivity() {
+				var title = document.querySelector("input[name='title']").value;
+				var todo = document.querySelector('.todo ul');
+					todo.innerHTML += '<li><i class="fa fa-university"></i> '+ title+'</li>';
+				var btn_close =  document.getElementById('close-modal');
+					btn_close.click();
+			}
+		</script>
+	</body>
+</html>

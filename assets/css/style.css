@@ -1,0 +1,238 @@
+/*
+* main style css created by pian maulana
+*/
+
+/*navbar*/
+nav{
+	background: whitesmoke;
+	min-height: 80px;
+	width: 100%;
+	position: absolute;
+	box-shadow: 2px 2px 10px #aaaaaa;
+}
+nav > .chat-active{
+	margin-left: 28%;
+	margin-top: 15px;
+	height: 100%;
+	float: left;
+}
+nav > .search-chat{
+	margin-left: 62%;
+    width: 20%;
+    margin-top: 20px;
+    background: #314659;
+    padding: 5px 10px 5px 10px;
+    border-radius: 30px;
+    color: white;
+}
+nav > .search-chat > input[type="text"] {
+	width: 90%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 13px;
+    color:white;
+	transition: 0.3s;
+}
+/*left sidebar*/
+aside{
+	height: 100%;
+	width: 25%;
+	background: #314659;
+	color: white;
+	position: fixed;
+	z-index: 99;
+	box-shadow: 2px 2px 5px #aaaaaa;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+aside > div > ul {
+	margin-top: 15px;
+	padding-bottom: 10px;
+	/*background: #0096d9;*/
+	padding-top: 10px;
+	color: black;
+	/*box-shadow: 2px 2px 5px #aaaaaa;*/
+}
+aside > div > ul > li {
+	list-style-type: none;
+	display: inline;
+	padding: 5px;
+	cursor: pointer;
+	color: white;
+}
+aside > div > div > div > .profile-img {
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	border-radius: 50%;
+	margin-left: 20px;
+	border: 3px solid navajowhite;
+}
+
+.side-top{
+	padding-top: 10px;
+}
+
+.tabcontent{
+	padding: 15px;
+}
+.thumb-img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: 2px solid #10a0d5;
+	outline: none;
+}
+.search-box{
+	padding: 10px 10px 10px 20px;
+	width: 100%;
+	background: #2d3d50;
+	margin-top: 10px;
+	border-radius: 30px;
+}
+.search-box > input[type="text"] {
+	width: 60%;
+    padding-left: 5px;
+    height: 35px;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: white;
+}
+.search-box > input[type="text"]:focus {
+	border-bottom: 1px solid white;
+	transition: 0.5s;
+	width: 80%;
+}
+.search-box > i {
+	font-size: 20px;
+}
+.tabcontent > .row {
+	border-bottom: 1px solid white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.active-chat{
+	background: #3498db;
+}
+/*right sidebar*/
+.sidebar-right{
+	height: 100%;
+	overflow-y: scroll;
+	right: 0;
+	background: #314659;
+	width: 15%;
+	position: fixed;
+	box-shadow: 5px 2px 10px 5px #aaa;
+	padding: 20px;
+}
+.activity{
+	width: 100%;
+	text-align: center;
+}
+.activity > button{
+	background: transparent;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+    width: 80%
+}
+.todo, .online-user{
+	margin-top: 30px;
+	color: white;
+	padding: 5px;
+}
+.todo > ul, .online-user > ul{
+	margin-left: -30px;
+}
+.todo > ul > li{
+	list-style-type: none;
+	line-height: 2em;
+	font-size: 12px;
+	padding: 5px 10px 5px 10px;
+    background: #2d3d50;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+.online-user > ul > li{
+	list-style-type: none;
+	line-height: 2em;
+	font-size: 12px;
+	padding: 0px 10px 0px 0px;
+    background: #2d3d50;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+.small-img{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+}
+/*wraper*/
+.wraper{
+	height: 100%;
+    width: 60%;
+    background: whitesmoke;
+    margin-left: 25%;
+    position: fixed;
+    z-index: -1
+}
+.wraper > .content{
+	height: 78%;
+	margin-top: 100px;
+    padding: 0px 15px 0px 15px;
+    overflow-y: scroll;
+}
+.wraper > .content > .row{
+	margin-bottom: 15px;
+}
+.left-chat{
+	margin-left: 5%;
+    width: 350px;
+    height: auto;
+    background: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+.right-chat{
+	margin-left: 55%;
+    width: 350px;
+    height: auto;
+    background: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+.footer-chat{
+	background: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 0px 0px 10px;
+    box-shadow: 2px 2px 10px #aaaaaa
+}
+.footer-chat > input[type="text"]{
+	width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    padding: 0px 15px 0px 15px;
+    font-size: 14px;
+    color: #343a40;
+}
+.footer-chat > i{
+	font-size: 28px;
+	color: #10a0d5;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.footer-chat>i:hover{
+	color: #314659;
+}
